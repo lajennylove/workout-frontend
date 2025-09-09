@@ -14,7 +14,7 @@
 
 - **Frontend**: HTML5, TypeScript, Tailwind CSS
 - **Build Tool**: Vite 4.5.0
-- **Styling**: Tailwind CSS 3.3.0
+- **Styling**: Tailwind CSS 3.4.17 (latest stable)
 - **Package Manager**: Yarn
 - **Node Version**: v22.12.0 (see `.nvmrc`)
 

@@ -1,4 +1,5 @@
 // Main TypeScript file for the personal trainer website
+import './style.css'
 import { images } from './assets/images/index'
 
 // Set the hero background image
