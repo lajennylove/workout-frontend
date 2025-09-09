@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BE-3 Personal Trainer - Building The Future</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body class="bg-black text-white font-sans pt-16">
+    <!-- Header -->
+    <nav class="bg-neutral-800 fixed w-full z-20 top-0 start-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <div class="flex flex-col">
+                    <h1 class="text-lg md:text-2xl font-bold text-orange-600 font-display">SPORTS INTELLIGENCE</h1>
+                    <p class="text-xs text-white font-display">Strava Analytics</p>
+                </div>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button" class="btn-primary">Get started</button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+                    <li>
+                        <a href="#home"
+                            class="block py-2 px-3 text-white bg-orange-600 rounded-sm md:bg-transparent md:text-orange-600 md:p-0"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#goals"
+                            class="block py-2 px-3 text-gray-900 md:text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0">Goals</a>
+                    </li>
+                    <li>
+                        <a href="#effects"
+                            class="block py-2 px-3 text-gray-900 md:text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0">Effects</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 px-3 text-gray-900 md:text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0">About</a>
+                    </li>
+                    <li>
+                        <a href="#opinions"
+                            class="block py-2 px-3 text-gray-900 md:text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0">Opinions</a>
+                    </li>
+                    <li>
+                        <a href="#plans"
+                            class="block py-2 px-3 text-gray-900 md:text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0">Plans</a>
+                    </li>
+                    <li>
+                        <a href="#faq"
+                            class="block py-2 px-3 text-gray-900 md:text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="block py-2 px-3 text-gray-900 md:text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- !Header -->
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden"
+        style="background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-gradient-to-r from-black to-gray-900 opacity-70"></div>
+
+        <!-- Centered Content Container -->
+        <div class="relative container mx-auto px-4 text-center z-10 flex flex-col items-center justify-center">
+            <!-- Main Content -->
+            <div class="mb-8">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-orange-500 mb-4 md:mb-6 leading-tight">
+                    AI-POWERED STRAVA ANALYTICS
+                </h1>
+                <p class="text-gray-300 mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
+                    Transform your Strava workouts into actionable insights. Get personalized training plans,
+                    performance analysis, and AI-driven recommendations to optimize your fitness journey.
+                </p>
+                <button
+                    class="bg-black text-white px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-stone-900 transition-colors">
+                    ANALYZE MY WORKOUTS
+                </button>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                <div class="bg-neutral-800 p-4 md:p-6 rounded-xl">
+                    <div class="w-16 h-16 md:w-24 md:h-24 mx-auto relative">
+                        <svg class="w-16 h-16 md:w-24 md:h-24 text-gray-700" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="4" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#FF6B35" strokeWidth="4"
+                                strokeDasharray="283" strokeDashoffset="283" transform="rotate(-90 50 50)" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-lg md:text-2xl font-bold text-white">92%</span>
+                        </div>
+                    </div>
+                    <p class="text-center text-xs md:text-sm text-white mt-2">Workout Analysis Accuracy</p>
+                </div>
+                <div class="bg-neutral-800 p-4 md:p-6 rounded-xl">
+                    <div class="w-16 h-16 md:w-24 md:h-24 mx-auto relative">
+                        <svg class="w-16 h-16 md:w-24 md:h-24 text-gray-700" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="4" />
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#22C55E" strokeWidth="4"
+                                strokeDasharray="283" strokeDashoffset="141.5" transform="rotate(-90 50 50)" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-lg md:text-2xl font-bold text-white">75%</span>
+                        </div>
+                    </div>
+                    <p class="text-center text-xs md:text-sm text-white mt-2">Performance Improvement Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- !Hero Section -->
+
+    <!-- Goals Section -->
+    <section id="goals" class="py-10 bg-stone-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[90px] leading-[95px] font-bold tracking-[0px] mb-4">
+                    <span class="text-zinc-600">WHAT IS YOUR</span>
+                    <span class="text-white">GOAL?</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Weight Loss Card -->
+                <div id="weight-loss-card" class="rounded-2xl overflow-hidden relative h-96 md:h-[38rem] group">
+                    <div class="absolute inset-0 grayscale group-hover:grayscale-0 transition-all duration-300"
+                        style="background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    </div>
+                    <div class="absolute inset-0 bg-black/50"></div>
+                    <div class="h-64 md:h-80 relative z-10"></div>
+                    <div class="p-6 relative z-10">
+                        <div class="text-orange-500 text-sm font-semibold mb-2">BE <span class="text-white">LEAN</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">WEIGHT<br>LOSS</h3>
+                        <button
+                            class="bg-black text-white px-6 py-2 rounded-lg font-semibold hover:bg-stone-900 transition-colors">
+                            TRAIN TO LOSE WEIGHT
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Health Status Card -->
+                <div id="health-status-card" class="rounded-2xl overflow-hidden relative h-96 md:h-[38rem] group">
+                    <div class="absolute inset-0 grayscale group-hover:grayscale-0 transition-all duration-300"
+                        style="background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    </div>
+                    <div class="absolute inset-0 bg-black/50"></div>
+                    <div class="h-64 md:h-80 relative z-10"></div>
+                    <div class="p-6 relative z-10">
+                        <div class="text-orange-500 text-sm font-semibold mb-2">BE <span
+                                class="text-white">STRONG</span></div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">HEALTH<br>STATUS</h3>
+                        <button
+                            class="bg-black text-white px-6 py-2 rounded-lg font-semibold hover:bg-stone-900 transition-colors">
+                            IMPROVE YOUR HEALTH
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Body Building Card -->
+                <div id="body-building-card" class="rounded-2xl overflow-hidden relative h-96 md:h-[38rem] group">
+                    <div class="absolute inset-0 grayscale group-hover:grayscale-0 transition-all duration-300"
+                        style="background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    </div>
+                    <div class="absolute inset-0 bg-black/50"></div>
+                    <div class="h-64 md:h-80 relative z-10"></div>
+                    <div class="p-6 relative z-10">
+                        <div class="text-orange-500 text-sm font-semibold mb-2">BE <span
+                                class="text-white">MASSIVE</span></div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">BODY<br>BUILDING</h3>
+                        <button
+                            class="bg-black text-white px-6 py-2 rounded-lg font-semibold hover:bg-stone-900 transition-colors">
+                            BUILD YOUR MUSCLES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Chart Section -->
+    <section class="py-10 bg-stone-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-neutral-800 rounded-2xl p-8 shadow-2xl">
+                <h2 class="text-4xl font-bold text-zinc-600 mb-8 text-center">
+                    READY FOR
+                    <span class="text-white">PROGRESS?</span>
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-sm uppercase tracking-wide mb-4">
+                        <span class="text-orange-500">Sports Intelligence</span> vs <span class="text-gray-400">Training
+                            Alone</span>
+                    </h3>
+                    <div class="relative h-64">
+                        <svg viewBox="0 0 400 160" class="w-full h-full">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#FF6B35" stop-opacity="0.3" />
+                                    <stop offset="100%" stop-color="#FF6B35" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Sports Intelligence Line (Exponential Growth) -->
+                            <path d="M20,120 C60,110 100,95 140,70 C180,40 220,20 260,8 C300,5 340,6 380,6" fill="none"
+                                stroke="#FF6B35" stroke-width="2" />
+
+                            <!-- Individual Line -->
+                            <path d="M20,130 C60,120 100,110 140,100 C180,90 220,80 260,69 C300,60 340,66 380,72"
+                                fill="none" stroke="#9CA3AF" stroke-width="2" />
+
+                            <!-- Data Points -->
+                            <circle cx="20" cy="120" r="4" fill="#FF6B35" />
+                            <circle cx="140" cy="70" r="4" fill="#FF6B35" />
+                            <circle cx="260" cy="8" r="4" fill="#FF6B35" />
+                            <circle cx="380" cy="6" r="4" fill="#FF6B35" />
+
+                            <circle cx="20" cy="130" r="4" fill="#9CA3AF" />
+                            <circle cx="140" cy="100" r="4" fill="#9CA3AF" />
+                            <circle cx="260" cy="69" r="4" fill="#9CA3AF" />
+                            <circle cx="380" cy="72" r="4" fill="#9CA3AF" />
+
+                            <!-- Labels -->
+                            <text x="20" y="140" font-size="10" fill="#FF6B35">-2KG</text>
+                            <text x="140" y="140" font-size="10" fill="#FF6B35">-5KG</text>
+                            <text x="260" y="140" font-size="10" fill="#FF6B35">-8KG</text>
+                            <text x="380" y="140" font-size="10" fill="#FF6B35">-15KG</text>
+
+                            <text x="20" y="150" font-size="10" fill="#9CA3AF">-0.5KG</text>
+                            <text x="140" y="150" font-size="10" fill="#9CA3AF">-1KG</text>
+                            <text x="260" y="150" font-size="10" fill="#9CA3AF">-0.5KG</text>
+                            <text x="380" y="150" font-size="10" fill="#9CA3AF">-1KG</text>
+
+                        </svg>
+                    </div>
+
+                    <div class="text-right mt-4">
+                        <span class="text-2xl font-bold text-orange-500">+300%</span>
+                    </div>
+                </div>
+
+                <div class="text-center text-sm text-gray-400">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    <span class="text-orange-500">Sports Intelligence</span> analyzes your Strava data to provide
+                    personalized insights, optimized training
+                    plans, and AI-driven recommendations that deliver 300% better results compared to training alone.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Weight Lifting -->
+                <div class="bg-black/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 text-center">
+                    <div class="mx-auto w-12 h-12 flex items-center justify-center mb-4">
+                        <img src="/src/assets/icons/dumbbell.svg" alt="Weight Lifting" class="w-8 h-8 text-orange-500">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">WEIGHT LIFTING</h3>
+                    <p class="text-gray-400 text-sm">Urna at amet dignissim odioni amet mi pharetra.</p>
+                </div>
+
+                <!-- Cardio Training -->
+                <div class="bg-black/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 text-center">
+                    <div class="mx-auto w-12 h-12 flex items-center justify-center mb-4">
+                        <img src="/src/assets/icons/heartbeat.svg" alt="Cardio Training"
+                            class="w-8 h-8 text-orange-500">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">CARDIO TRAINING</h3>
+                    <p class="text-gray-400 text-sm">Nulla quis justo. Proin dui aliquam eget, ante insis.</p>
+                </div>
+
+                <!-- Flex Training -->
+                <div class="bg-black/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 text-center">
+                    <div class="mx-auto w-12 h-12 flex items-center justify-center mb-4">
+                        <img src="/src/assets/icons/flexibility.svg" alt="Flexibility Training"
+                            class="w-8 h-8 text-orange-500">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">FLEX TRAINING</h3>
+                    <p class="text-gray-400 text-sm">Quisque nec sem nunc accumsan placerat eget.</p>
+                </div>
+
+                <!-- Workout Plan -->
+                <div class="bg-black/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 text-center">
+                    <div class="mx-auto w-12 h-12 flex items-center justify-center mb-4">
+                        <img src="/src/assets/icons/clipboard.svg" alt="Workout Plan" class="w-8 h-8 text-orange-500">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">WORKOUT PLAN</h3>
+                    <p class="text-gray-400 text-sm">Suspendisse dignissim in, consequat, auguereto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-gray-900 px-4 py-12">
+        <div class="bg-orange-600 rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-white mb-4">3000 SATISFIED CUSTOMERS</h2>
+            <p class="text-white text-sm">Join thousands of clients who have transformed their lives with our
+                personalized training programs.</p>
+        </div>
+
+        <div class="space-y-6">
+            <!-- Testimonial 1 -->
+            <div class="bg-white rounded-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <svg class="w-6 h-6 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-gray-800 text-sm mb-4">"The training program was incredible! I lost 20 pounds and
+                            gained so much confidence. John's approach really works."</p>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                            <div>
+                                <p class="text-gray-800 font-semibold text-sm">JAMES HILL</p>
+                                <p class="text-gray-600 text-xs">Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white rounded-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <svg class="w-6 h-6 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-gray-800 text-sm mb-4">"I never thought I could achieve my fitness goals, but
+                            with John's guidance, I exceeded all my expectations!"</p>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                            <div>
+                                <p class="text-gray-800 font-semibold text-sm">MIA COLL</p>
+                                <p class="text-gray-600 text-xs">Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-gray-900 px-4 py-12">
+        <h2 class="text-3xl md:text-4xl font-bold font-display text-center mb-8">
+            <span class="text-gray-400">CHOOSE A PACKAGE</span><br>
+            <span class="text-white">FOR YOURSELF</span>
+        </h2>
+
+        <div class="space-y-6">
+            <!-- Basic Package -->
+            <div class="card">
+                <h3 class="text-xl font-bold text-white mb-2">BASIC</h3>
+                <div class="text-4xl font-bold text-white mb-4">$39</div>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Customized Workout Plan
+                    </li>
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Weekly Check-ins
+                    </li>
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Access to Exercise Library
+                    </li>
+                </ul>
+                <button class="btn-secondary w-full">GET STARTED</button>
+            </div>
+
+            <!-- Professional Package (Highlighted) -->
+            <div class="bg-orange-600 rounded-lg p-6">
+                <h3 class="text-xl font-bold text-white mb-2">PROFESSIONAL</h3>
+                <div class="text-4xl font-bold text-white mb-4">$69</div>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Customized Workout Plan
+                    </li>
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Weekly Check-ins
+                    </li>
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Access to Exercise Library
+                    </li>
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Nutritional Guidance
+                    </li>
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        24/7 Support
+                    </li>
+                </ul>
+                <button class="btn-secondary w-full">GET STARTED</button>
+            </div>
+
+            <!-- Advanced Package -->
+            <div class="card">
+                <h3 class="text-xl font-bold text-white mb-2">ADVANCED</h3>
+                <div class="text-4xl font-bold text-white mb-4">$89</div>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Customized Workout Plan
+                    </li>
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Weekly Check-ins
+                    </li>
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Access to Exercise Library
+                    </li>
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Nutritional Guidance
+                    </li>
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        24/7 Support
+                    </li>
+                    <li class="flex items-center text-white text-sm">
+                        <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Personal Training Sessions
+                    </li>
+                </ul>
+                <button class="btn-secondary w-full">GET STARTED</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-gray-900 px-4 py-12">
+        <h2 class="text-3xl md:text-4xl font-bold font-display text-center mb-8">
+            <span class="text-orange-600">FAQ</span>
+        </h2>
+
+        <div class="space-y-4">
+            <div class="card" data-faq-item>
+                <button class="w-full flex justify-between items-center" data-faq-button>
+                    <span class="text-white font-semibold">WHAT IS YOUR TRAINING PHILOSOPHY?</span>
+                    <svg class="w-5 h-5 text-white transition-transform" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                </button>
+                <div class="hidden mt-4" data-faq-content>
+                    <p class="text-gray-300 text-sm">My training philosophy focuses on progressive overload, proper
+                        form, and sustainable lifestyle changes. I believe in creating personalized programs that fit
+                        your schedule and goals while ensuring long-term success.</p>
+                </div>
+            </div>
+
+            <div class="card" data-faq-item>
+                <button class="w-full flex justify-between items-center" data-faq-button>
+                    <span class="text-white font-semibold">DO YOU OFFER ONLINE COACHING?</span>
+                    <svg class="w-5 h-5 text-white transition-transform" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                </button>
+                <div class="hidden mt-4" data-faq-content>
+                    <p class="text-gray-300 text-sm">Yes! I offer comprehensive online coaching programs that include
+                        workout plans, nutrition guidance, and regular check-ins via video calls and messaging.</p>
+                </div>
+            </div>
+
+            <div class="card" data-faq-item>
+                <button class="w-full flex justify-between items-center" data-faq-button>
+                    <span class="text-white font-semibold">WHAT IS YOUR CANCELLATION POLICY?</span>
+                    <svg class="w-5 h-5 text-white transition-transform" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                </button>
+                <div class="hidden mt-4" data-faq-content>
+                    <p class="text-gray-300 text-sm">I offer flexible cancellation policies. You can cancel or
+                        reschedule sessions with 24 hours notice. For monthly programs, you can cancel anytime with 30
+                        days notice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-orange-600 px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold font-display text-white mb-8">CONTACT ME</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Contact Info -->
+                <div>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-white mb-4">BE-3 BUILDING THE FUTURE</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-white text-sm">123 Fitness Street, City, State 12345</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                </svg>
+                                <span class="text-white text-sm font-semibold">+1 (123) 456-7890</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                </svg>
+                                <span class="text-white text-sm font-semibold">info@be-3.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="flex space-x-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-white text-sm mb-4">HAVE A QUESTION? WRITE TO US</h3>
+                    <form class="space-y-4" data-contact-form>
+                        <input type="text" placeholder="NAME"
+                            class="w-full px-4 py-3 bg-dark-800 text-white rounded-lg border border-gray-600 focus:border-orange-600 focus:outline-none">
+                        <input type="email" placeholder="EMAIL"
+                            class="w-full px-4 py-3 bg-dark-800 text-white rounded-lg border border-gray-600 focus:border-orange-600 focus:outline-none">
+                        <input type="text" placeholder="SUBJECT"
+                            class="w-full px-4 py-3 bg-dark-800 text-white rounded-lg border border-gray-600 focus:border-orange-600 focus:outline-none">
+                        <textarea placeholder="MESSAGE" rows="4"
+                            class="w-full px-4 py-3 bg-dark-800 text-white rounded-lg border border-gray-600 focus:border-orange-600 focus:outline-none resize-none"></textarea>
+                        <button type="submit" class="btn-secondary w-full">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
