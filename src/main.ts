@@ -29,6 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bodyBuildingCard && images.bodyBuildingBg) {
         bodyBuildingCard.style.backgroundImage = `url(${images.bodyBuildingBg})`
     }
+
+    // Jenny Martinez profile image
+    const jennyMartinezImage = document.querySelector('#jenny-martinez-image') as HTMLElement
+    if (jennyMartinezImage && images.jennyMartinezBg) {
+        console.log('Setting Jenny Martinez image:', images.jennyMartinezBg)
+        jennyMartinezImage.style.backgroundImage = `url(${images.jennyMartinezBg})`
+    } else {
+        console.log('Jenny Martinez image not found or not loaded:', {
+            element: jennyMartinezImage,
+            imageUrl: images.jennyMartinezBg
+        })
+    }
 })
 
 // Mobile menu toggle functionality
