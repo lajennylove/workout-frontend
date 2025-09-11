@@ -12,20 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Set the goal card background images
 document.addEventListener('DOMContentLoaded', () => {
-    // Weight Loss card - apply to the grayscale background layer
-    const weightLossCard = document.querySelector('#weight-loss-card .grayscale') as HTMLElement
+    // Weight Loss card - apply to the background layer
+    const weightLossCard = document.querySelector('#weight-loss-card .absolute.inset-0') as HTMLElement
     if (weightLossCard && images.weightLossBg) {
         weightLossCard.style.backgroundImage = `url(${images.weightLossBg})`
     }
 
-    // Health Status card - apply to the grayscale background layer
-    const healthStatusCard = document.querySelector('#health-status-card .grayscale') as HTMLElement
+    // Health Status card - apply to the background layer
+    const healthStatusCard = document.querySelector('#health-status-card .absolute.inset-0') as HTMLElement
     if (healthStatusCard && images.healthStatusBg) {
         healthStatusCard.style.backgroundImage = `url(${images.healthStatusBg})`
     }
 
-    // Body Building card - apply to the grayscale background layer
-    const bodyBuildingCard = document.querySelector('#body-building-card .grayscale') as HTMLElement
+    // Body Building card - apply to the background layer
+    const bodyBuildingCard = document.querySelector('#body-building-card .absolute.inset-0') as HTMLElement
     if (bodyBuildingCard && images.bodyBuildingBg) {
         bodyBuildingCard.style.backgroundImage = `url(${images.bodyBuildingBg})`
     }
