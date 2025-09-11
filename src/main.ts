@@ -41,6 +41,18 @@ document.addEventListener('DOMContentLoaded', () => {
             imageUrl: images.jennyMartinezBg
         })
     }
+
+    // Silvana Cervantes profile image
+    const silvanaProfileImage = document.querySelector('#silvana-profile-image') as HTMLImageElement
+    if (silvanaProfileImage && images.silvanaProfile) {
+        silvanaProfileImage.src = images.silvanaProfile
+    }
+
+    // Armando Gonzalez profile image
+    const armandoProfileImage = document.querySelector('#armando-profile-image') as HTMLImageElement
+    if (armandoProfileImage && images.armandoProfile) {
+        armandoProfileImage.src = images.armandoProfile
+    }
 })
 
 // Mobile menu toggle functionality
