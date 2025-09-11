@@ -2,6 +2,8 @@
 
 > Transform your Strava workouts into actionable insights with AI-driven training recommendations
 
+🌐 **Live Website**: [https://lajennylove.github.io/workout-frontend/](https://lajennylove.github.io/workout-frontend/)
+
 ## 🚀 Features
 
 - 🎯 **AI-Powered Analytics**: Get personalized insights from your Strava data
